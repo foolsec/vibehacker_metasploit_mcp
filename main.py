@@ -56,6 +56,7 @@ def list_payloads(platform: str = "", arch: str = "") -> list:
     
     return filtered[:100]  # Limit results
 
+# todo: add so it runs msfvenom in a ssh session
 @mcp.tool()
 def generate_payload(payload_type: str, lhost: str, lport: int, format_type: str = "raw") -> str:
     """
