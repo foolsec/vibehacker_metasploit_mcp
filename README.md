@@ -44,7 +44,14 @@ uv pip install -e .
 Before running the application, start the Metasploit RPC server:
 
 ```bash
+# Full configuration with all options
 msfrpcd -P your_password -S -a 127.0.0.1 -p 55553
+```
+
+Or use the simpler command to start the RPC server in the background on the default port (55553):
+
+```bash
+msfrpcd -P your_password
 ```
 
 ### Environment Variables
